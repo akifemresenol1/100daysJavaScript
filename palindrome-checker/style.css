@@ -13,7 +13,7 @@ body {
 .pal {
   width: 40rem;
   background-color: white;
-  padding: 5rem 3rem;
+  padding: 2rem 3rem;
   border-radius: 5px;
 }
 
@@ -42,4 +42,10 @@ p.result {
   font-size: 2rem;
   font-weight: 600;
   color: rgb(58, 55, 55);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
 }
