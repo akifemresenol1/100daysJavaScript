@@ -1,6 +1,15 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "open sans", "sans-serif";
 }
 .container {
   max-width: 900px;
@@ -118,7 +127,7 @@ nav .slide {
 }
 
 #login:checked ~ nav label.login,
-#regiter:checked ~ nav label.register,
+#register:checked ~ nav label.register,
 #reset:checked ~ nav label.reset {
   color: #fff;
 }
@@ -137,4 +146,126 @@ nav .slide {
 
 #reset:checked ~ section .content-video {
   display: block;
+}
+
+/* FORM STYLES */
+
+section .content {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.content > i {
+  font-size: 3rem;
+  color: orange;
+  border: 2px solid;
+  padding: 8px;
+  border-radius: 5rem;
+}
+
+.content h2 {
+  font-size: 2rem;
+  line-height: 2;
+  padding: 0 1rem;
+  position: relative;
+}
+.content p {
+  padding-bottom: 1rem;
+}
+
+.content form {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content form label {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content form label input {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 3rem;
+  border-radius: 10px 0 10px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: rgb(33, 33, 33);
+  transition: all 0.3s;
+}
+
+.content form label input:focus:invalid {
+  font-size: 1.6rem;
+  border-bottom: 2px solid orange;
+}
+
+.content form label input:valid {
+  font-size: 1.6rem;
+  border-bottom: 2px solid green;
+  background-color: #e8f0fe;
+}
+
+.content form i {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  font-size: 1.3rem;
+  color: orange;
+}
+
+::placeholder {
+  font-size: 1.6rem;
+  color: rgb(33, 33, 33);
+}
+
+.content .btn {
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: orange;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.content .btn:hover {
+  background-color: purple;
+}
+
+.embed-code {
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.content form textarea {
+  width: 100%;
+  height: 10rem;
+  outline: none;
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+
+.embed-code span {
+  position: absolute;
+  right: -6px;
+  bottom: 6px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: purple;
+  color: #fff;
+  padding: 5px 8px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.embed-code span:hover {
+  font-size: 1.8rem;
 }
