@@ -9,14 +9,14 @@ function getUsers(e) {
 
   const http = new XMLHttpRequest();
 
-  http.open("GET", users.json, true);
+  http.open("GET", "users.json", true);
 
   http.onload = function () {
     if (this.status === 200) {
       const users = JSON.parse(this.responseText);
 
       let output = "";
-      users.forEeach(function (user) {
+      users.forEach(function (user) {
         output += `
             <hr>
             <ul>
