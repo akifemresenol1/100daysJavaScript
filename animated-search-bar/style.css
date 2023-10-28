@@ -24,7 +24,7 @@ body {
 header {
   background-color: darkslategray;
   padding: 1.3rem 0;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 
 nav {
