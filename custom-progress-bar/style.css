@@ -1,0 +1,33 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: darkslategray;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 40rem;
+  background-color: darkgray;
+  border-radius: 0 50px 50px 0;
+}
+
+.progress {
+  width: 0%;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: purple;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  border-radius: 0 50px 50px 0;
+}
